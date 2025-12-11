@@ -176,33 +176,20 @@ public class SpinManager : MonoBehaviour
 
     private int ProcessReward(){
         int reward = 0;
-        foreach(GameObject symbolCheck in paytable.symbolsChecker){
-            int id = symbolCheck.GetComponent<Symbol>().id;
-            foreach (PaytablePattern pattern in paytable.patterns)
-            {
-             /*   int mult = CheckLinePattern(pattern.pattern, id);
-            if (mult != 0)
-            {
-                mult *= paytable.GetReward(id, mult);
-                Debug.Log($"<color=green> Coincidencia con patrón para símbolo {id}. Recompensa: {mult}</color>");
-                return mult;
-            }*/
-            }
-            Prize result = CheckPrize(symbolCheck.GetComponent<Symbol>().id);
-            reward = paytable.GetReward(result.symbolId, result.matchCount);
-            if (reward > 0)
-            {
-                Debug.Log($"<color=yellow>Premio: símbolo {result.symbolId} x{result.matchCount} → {reward} créditos</color>");
-                return reward;
-            }
+
+        Prize result = CheckMiddleLine();
+        reward = paytable.GetReward(result.symbolId, result.matchCount);
+
+        if (reward > 0)
+        {
+            Debug.Log($"<color=yellow>Premio en línea central: símbolo {result.symbolId} x{result.matchCount} → {reward} créditos</color>");
+            return reward;
         }
 
-        if (reward == 0){
-                 Debug.Log($"<color=red>No hubo premio</color>");
-
-        }
-        return reward;
+        Debug.Log("<color=red>No hubo premio en línea central</color>");
+        return 0;
     }
+
     
     /// <summary>
     /// Checa el patron en horizontal y obtiene el premio
@@ -271,6 +258,40 @@ public class SpinManager : MonoBehaviour
         }
        
         return prize;
+    }
+
+
+    private Prize CheckMiddleLine()
+    {
+        // Solo revisa la fila central (row = 1)
+        Symbol a = symbols[1, 0];
+        Symbol b = symbols[1, 1];
+        Symbol c = symbols[1, 2];
+
+        Debug.Log($"Linea central: {a.symbolID}, {b.symbolID}, {c.symbolID}");
+
+        // Caso 1: los tres son iguales
+        if (a.id == b.id && b.id == c.id)
+        {
+            SetHighlight(a.gameObject.transform.position, 0);
+            SetHighlight(b.gameObject.transform.position, 1);
+            SetHighlight(c.gameObject.transform.position, 2);
+
+            return new Prize(a.id, 3);
+        }
+
+        // Caso 2: dos iguales
+        if (a.id == b.id)
+            return new Prize(a.id, 2);
+
+        if (b.id == c.id)
+            return new Prize(b.id, 2);
+
+        if (a.id == c.id)
+            return new Prize(a.id, 2);
+
+        // Caso 3: ningún match
+        return new Prize(0, 0);
     }
 
 

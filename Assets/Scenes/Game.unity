@@ -222,7 +222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &136289305
 Transform:
   m_ObjectHideFlags: 0
@@ -305,7 +305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &285782765
 Transform:
   m_ObjectHideFlags: 0
@@ -420,20 +420,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   symbols:
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
+  - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
+  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 48c0710809e08774d9ae2d2d7aa966d6, type: 3}
-  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
-  - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
-  - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
+  - {fileID: 5133041465884090788, guid: 8cf9032ccea407f4eadeacbf6d2a3c25, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
-  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
-  - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
   spacing: 3.5
   spinSpeedCurve:
     serializedVersion: 2
@@ -1113,19 +1110,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   symbols:
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
-  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
-  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
+  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
+  - {fileID: 5133041465884090788, guid: 8cf9032ccea407f4eadeacbf6d2a3c25, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 48c0710809e08774d9ae2d2d7aa966d6, type: 3}
-  - {fileID: 5133041465884090788, guid: 8cf9032ccea407f4eadeacbf6d2a3c25, type: 3}
+  - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
+  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
-  - {fileID: 5133041465884090788, guid: bc3ce8a0d1c7bc14ab25c34b7318b015, type: 3}
   spacing: 3.5
   spinSpeedCurve:
     serializedVersion: 2
@@ -1362,8 +1360,6 @@ MonoBehaviour:
   - {fileID: 290766569}
   - {fileID: 982930665}
   - {fileID: 585619592}
-  - {fileID: 285782766}
-  - {fileID: 136289306}
   waitTime: 0.2
   spinButton: {fileID: 1633066642}
   paytable: {fileID: 11400000, guid: 4fe3805708ab3554d8b196090aaecf44, type: 2}
@@ -1660,20 +1656,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   symbols:
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
-  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
   - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
   - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
-  - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
   - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
   - {fileID: 5133041465884090788, guid: 48c0710809e08774d9ae2d2d7aa966d6, type: 3}
-  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
+  - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
   - {fileID: 5133041465884090788, guid: 8cf9032ccea407f4eadeacbf6d2a3c25, type: 3}
-  - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
-  - {fileID: 5133041465884090788, guid: bc3ce8a0d1c7bc14ab25c34b7318b015, type: 3}
-  - {fileID: 5133041465884090788, guid: 48c0710809e08774d9ae2d2d7aa966d6, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
   spacing: 3.5
   spinSpeedCurve:
     serializedVersion: 2
