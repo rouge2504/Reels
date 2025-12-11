@@ -290,8 +290,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 1.2
-  maxSpeed: 100
+  spinDuration: 2
+  maxSpeed: 150
   isSpinning: 0
 --- !u!1 &285782764
 GameObject:
@@ -377,8 +377,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 1.2
-  maxSpeed: 100
+  spinDuration: 2
+  maxSpeed: 150
   isSpinning: 0
 --- !u!1 &290766567
 GameObject:
@@ -464,8 +464,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 1.2
-  maxSpeed: 100
+  spinDuration: 2
+  maxSpeed: 150
   isSpinning: 0
 --- !u!1 &330585543
 GameObject:
@@ -1156,8 +1156,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 1.2
-  maxSpeed: 100
+  spinDuration: 2
+  maxSpeed: 150
   isSpinning: 0
 --- !u!1 &597453136
 GameObject:
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   - {fileID: 585619592}
   - {fileID: 285782766}
   - {fileID: 136289306}
-  waitTime: 0.1
+  waitTime: 0.2
   spinButton: {fileID: 1633066642}
   paytable: {fileID: 11400000, guid: 4fe3805708ab3554d8b196090aaecf44, type: 2}
   creditText: {fileID: 1319517843}
@@ -1705,8 +1705,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 1.2
-  maxSpeed: 100
+  spinDuration: 2
+  maxSpeed: 150
   isSpinning: 0
 --- !u!1 &1045648984
 GameObject:
