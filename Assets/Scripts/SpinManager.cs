@@ -180,13 +180,13 @@ public class SpinManager : MonoBehaviour
             int id = symbolCheck.GetComponent<Symbol>().id;
             foreach (PaytablePattern pattern in paytable.patterns)
             {
-                int mult = CheckLinePattern(pattern.pattern, id);
+             /*   int mult = CheckLinePattern(pattern.pattern, id);
             if (mult != 0)
             {
                 mult *= paytable.GetReward(id, mult);
                 Debug.Log($"<color=green> Coincidencia con patrón para símbolo {id}. Recompensa: {mult}</color>");
                 return mult;
-            }
+            }*/
             }
             Prize result = CheckPrize(symbolCheck.GetComponent<Symbol>().id);
             reward = paytable.GetReward(result.symbolId, result.matchCount);
