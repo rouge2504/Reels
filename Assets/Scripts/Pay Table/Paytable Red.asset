@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27ae859343e238c45b3ef20af7bfdee6, type: 3}
+  m_Name: Paytable Red
+  m_EditorClassIdentifier: 
+  symbolsChecker:
+  - {fileID: 5133041465884090788, guid: 993de786e56c8d84a83af72f54a0f44c, type: 3}
+  - {fileID: 5133041465884090788, guid: 5a43937accffc1948b929362bf6600b0, type: 3}
+  - {fileID: 5133041465884090788, guid: d450eba9a510ae447896897a18dd04e7, type: 3}
+  - {fileID: 5133041465884090788, guid: eb2933c4a0002da41b69a995815f01d4, type: 3}
+  - {fileID: 5133041465884090788, guid: 48c0710809e08774d9ae2d2d7aa966d6, type: 3}
+  - {fileID: 5133041465884090788, guid: 8cf9032ccea407f4eadeacbf6d2a3c25, type: 3}
+  - {fileID: 5133041465884090788, guid: bc3ce8a0d1c7bc14ab25c34b7318b015, type: 3}
+  entries:
+  - symbolId: 1
+    matchCount: 5
+    reward: 100
+  - symbolId: 1
+    matchCount: 4
+    reward: 75
+  - symbolId: 1
+    matchCount: 3
+    reward: 50
+  - symbolId: 1
+    matchCount: 2
+    reward: 25
+  - symbolId: 4
+    matchCount: 5
+    reward: 40
+  - symbolId: 4
+    matchCount: 4
+    reward: 20
+  - symbolId: 4
+    matchCount: 3
+    reward: 10
+  - symbolId: 4
+    matchCount: 2
+    reward: 5
+  - symbolId: 7
+    matchCount: 5
+    reward: 10
+  - symbolId: 7
+    matchCount: 4
+    reward: 5
+  - symbolId: 7
+    matchCount: 3
+    reward: 2
+  - symbolId: 7
+    matchCount: 2
+    reward: 1
+  - symbolId: 2
+    matchCount: 5
+    reward: 60
+  - symbolId: 2
+    matchCount: 4
+    reward: 30
+  - symbolId: 2
+    matchCount: 3
+    reward: 20
+  - symbolId: 2
+    matchCount: 2
+    reward: 10
+  - symbolId: 5
+    matchCount: 5
+    reward: 30
+  - symbolId: 5
+    matchCount: 4
+    reward: 15
+  - symbolId: 5
+    matchCount: 3
+    reward: 10
+  - symbolId: 5
+    matchCount: 2
+    reward: 5
+  - symbolId: 3
+    matchCount: 5
+    reward: 50
+  - symbolId: 3
+    matchCount: 4
+    reward: 20
+  - symbolId: 3
+    matchCount: 3
+    reward: 10
+  - symbolId: 3
+    matchCount: 2
+    reward: 5
+  - symbolId: 6
+    matchCount: 5
+    reward: 20
+  - symbolId: 6
+    matchCount: 4
+    reward: 10
+  - symbolId: 6
+    matchCount: 3
+    reward: 5
+  - symbolId: 6
+    matchCount: 2
+    reward: 2
+  patterns:
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 000000000100000000000000010000000000000000000000000000000000000000000000000000000100000000000000010000000000000001000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 010000000000000001000000000000000100000000000000000000000000000000000000000000000000000001000000000000000100000000000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 010000000000000000000000000000000100000000000000010000000000000001000000000000000000000000000000010000000000000000000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 000000000000000001000000000000000000000000000000010000000000000001000000000000000100000000000000000000000000000001000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 010000000100000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000001000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 000000000000000000000000010000000100000000000000000000000100000000000000000000000100000001000000000000000000000000000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 000000000100000000000000010000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+  - pattern:
+      rows: 3
+      columns: 5
+      data: 000000000000000000000000000000000000000000000000000000000100000000000000000000000000000001000000000000000100000000000000
