@@ -264,36 +264,63 @@ public class SpinManager : MonoBehaviour
     private Prize CheckMiddleLine()
     {
         // Solo revisa la fila central (row = 1)
+        ClearHighlights();
+        
         Symbol a = symbols[1, 0];
         Symbol b = symbols[1, 1];
         Symbol c = symbols[1, 2];
 
         Debug.Log($"Linea central: {a.symbolID}, {b.symbolID}, {c.symbolID}");
 
-        // Caso 1: los tres son iguales
         if (a.id == b.id && b.id == c.id)
         {
-            SetHighlight(a.gameObject.transform.position, 0);
-            SetHighlight(b.gameObject.transform.position, 1);
-            SetHighlight(c.gameObject.transform.position, 2);
-
+            HighlightMiddleLine();
             return new Prize(a.id, 3);
         }
 
         // Caso 2: dos iguales
         if (a.id == b.id)
+        {
+            HighlightPositions(0, 1);
             return new Prize(a.id, 2);
-
+        }
         if (b.id == c.id)
+        {
+            HighlightPositions(1, 2);
             return new Prize(b.id, 2);
-
+        }
         if (a.id == c.id)
+        {
+            HighlightPositions(0, 2);
             return new Prize(a.id, 2);
+        }
 
         // Caso 3: ningún match
         return new Prize(0, 0);
     }
 
+    private void ClearHighlights()
+    {
+        for (int i = 0; i < highlights.Length; i++)
+        {
+            highlights[i].gameObject.SetActive(false);
+        }
+    }
+
+    private void HighlightMiddleLine()
+    {
+        HighlightPositions(0, 1, 2);
+    }
+
+    private void HighlightPositions(params int[] cols)
+    {
+        foreach (int col in cols)
+        {
+            // highlightIndex = col (porque solo 3 símbolos centrales)
+            highlights[col].transform.position = symbols[1, col].transform.position;
+            highlights[col].gameObject.SetActive(true);
+        }
+    }
 
     /// <summary>
     /// Pone en consola la matriz con el id de los premios para visualizar que pasa

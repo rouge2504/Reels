@@ -286,7 +286,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 2
+  spinDuration: 1.2
   maxSpeed: 150
   isSpinning: 0
 --- !u!1 &285782764
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 2
+  spinDuration: 1.2
   maxSpeed: 150
   isSpinning: 0
 --- !u!1 &290766567
@@ -456,7 +456,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 2
+  spinDuration: 1.2
   maxSpeed: 150
   isSpinning: 0
 --- !u!1 &330585543
@@ -1149,7 +1149,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 2
+  spinDuration: 1.2
   maxSpeed: 150
   isSpinning: 0
 --- !u!1 &597453136
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   - {fileID: 290766569}
   - {fileID: 982930665}
   - {fileID: 585619592}
-  waitTime: 0.2
+  waitTime: 0.1
   spinButton: {fileID: 1633066642}
   paytable: {fileID: 11400000, guid: 4fe3805708ab3554d8b196090aaecf44, type: 2}
   creditText: {fileID: 1319517843}
@@ -1691,7 +1691,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spinDuration: 2
+  spinDuration: 1.2
   maxSpeed: 150
   isSpinning: 0
 --- !u!1 &1045648984
